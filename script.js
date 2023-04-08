@@ -55,6 +55,3 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
-
-
-// Made by Vinay Kumar Thakur
