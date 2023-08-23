@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: rgba(12, 100, 33, 0.495);
+    --text-color: #fff;
+    --main-color: rgb(5, 114, 5);
+    --second-color: #04621ab4;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 7rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background: rgba(2, 79, 21, 0.767);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+/* code by vinay */
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: black;
+}
+
+.home {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: -9;
+}
+
+
+.content p {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.content {
+    margin-top: -30rem;
+    width: 70rem;
+}
+
+.images img {
+    height: 45%;
+    width: 40%;
+    position: absolute;
+    left: 57%;
+    top: 9%;
+    border-radius: 3rem;
+    padding: 1rem;
+    border: .2rem solid var(--bg-color);
+    /* code by vinay kumar */
+}
+
+.image2 img {
+    height: 45%;
+    width: 40%;
+    position: absolute;
+    left: 12.5rem;
+    top: 54%;
+    border-radius: 3rem;
+    padding: 1rem;
+    border: .2rem solid var(--bg-color);
+}
+
+.par p {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.par {
+    margin-top: 38rem;
+    width: 72rem;
+    position: absolute;
+    left: 75rem;
+}
+
+.gallery {
+    background: var(--second-color);
+}
+
+.gallery h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.gallery-images .gallery-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.gallery-box img {
+    width: 100%;
+    transition: .5s ease;
+    padding: .5rem;
+    border-radius: 2rem;
+    border: .2rem solid var(--bg-color);
+}
+
+.gallery-box:hover img {
+    transform: scale(1.1);
+}
+
+.calculator h2{
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.power-calculator{
+    width: 50rem;
+    height: 37rem;
+    position: relative;
+    top: 5rem;
+}
+
+#solarForm {
+    background-color: var(--second-color);
+    padding: 20px;
+    border-radius: 5px;
+    /* code by vinay */
+}
+
+#solarForm label {
+    display: inline-block;
+    width: 280px;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    color: black;
+}
+
+#solarForm input[type=number] {
+    width: 140px;
+    padding: 10px 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+#solarForm input[type=button] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#solarForm input[type=button]:hover {
+    background-color: #3e8e41;
+}
+
+.result-box{
+    background: #064308;
+    height: 4rem;
+    width: 50rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border-color: silver;
+    position: relative;
+    top: 2%;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.para2 p {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.para2 {
+    margin-top: -25rem;
+    width: 65rem;
+    position: absolute;
+    left: 70rem;
+}
+
+.contact{
+    background: var(--second-color);
+}
+.contact h2{
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.contact p{
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    background: silver;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem white;
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea {
+    resize: none;
+}
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer; 
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items:center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
