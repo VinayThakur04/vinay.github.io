@@ -17,8 +17,8 @@ window.onscroll = () => {
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
-        
-        if(top >= offset && top < offset + height) {
+
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
@@ -56,3 +56,18 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+
+function sendEmail() {
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "tvinay92001@gmail.com",
+        Password: "Vkt12345@#",
+        To: 'tvinay2004@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "This is the subject",
+        Body: "And this is the body"
+    }).then(
+        message => alert(message)
+    );
+}
